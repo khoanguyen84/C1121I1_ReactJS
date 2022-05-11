@@ -7,11 +7,46 @@
     <title>JS Advanced</title>
 </head>
 <body>
-    <h1>Heading 1</h1>
+    <!-- <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Dung dev</h3>
     <h2>Test sourcetree</h2>
-    <h3>heading 3_NT</h3>
-    <script src="site.js"></script>
+    <h3>heading 3_NT</h3> -->
+    <!-- <div id="menu">
+        <ul></ul>
+    </div> -->
+    <div id="show_post">
+        <ul></ul>
+    </div>
+    <!-- <script type="module" src="site.js"></script> -->
+    <script src="fetch.js"></script>
+    <!-- <script src="prototype.js"></script> -->
+    <!-- <script>
+        let menu = [
+            "Bún bò",
+            "Phở",
+            "Cháo",
+            "Bánh canh"
+        ]
+        // let menu = [
+        //     "<li>Bún bò</li>",
+        //     "<li>Phở</li>",
+        //     "<li>Cháo</li>",
+        //     "<li>Bánh canh</li>"
+        // ]
+        Array.prototype.map2 = function(callback){
+            let result = [];
+            for(let i=0; i<this.length; i++){
+                result.push(callback(this[i]))
+            }
+            return result;
+        }
+        function handleCallback(item){
+            return  `<li>${item}</li>`
+        }
+        let htmls = menu.map2(handleCallback)
+        document.querySelector("#menu>ul").innerHTML = htmls.join("");
+
+    </script> -->
 </body>
 </html>
